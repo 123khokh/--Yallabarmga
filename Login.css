@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --ground-color:#231f20;
+    --green-color:#04d787;
+    --blue-color:#0799b9;
+
+}
+body{
+    /* background-color: var(--ground-color); */
+    background-image: url(https://i.pinimg.com/originals/d5/3e/6a/d53e6af334705a49a3f55770ff9fe84a.jpg);
+    font-family: marhey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+}
+.login{
+    background-color: rgba(0,0,0,0.5);
+    width: 300px;
+    height: 370px;
+    position: relative; 
+    padding: 25px;
+    border-radius: 25px;
+}
+.login h1{
+    color: var(--green-color);
+    text-align: center;
+    margin-bottom: 20px;
+}
+.user{
+    color: #04d787;
+    position: absolute;
+    right: 290px;
+    top: 110px;
+    
+}
+.email{
+    color: #04d787;
+    position: absolute;
+    right: 290px;
+    top: 170px;
+    
+}
+.password{
+    color: #04d787;
+    position: absolute;
+    right: 290px;
+    top: 231px;
+    
+}
+input{
+    width: 100%;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    margin-bottom: 20px;
+    border-bottom: #04d787 solid 2px;
+    color: white;
+    font-size: 16px;
+    font-family: marhey;
+}
+button{
+    width: 100%;
+    height:40px;
+    background-color: var(--green-color);
+    border: none;
+    outline: none;
+    margin-bottom: 20px;
+    border-radius: 40px;
+    font-size: 18px;
+    font-family: marhey;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+button a{
+    color: white;
+    text-decoration: none;
+}
+button:hover{
+    transform: scale(0.9);
+}
+.re {
+    text-decoration: none;
+    color: white;
+    
+   
+}
+.re:hover{
+    color: red;
+}
+.animation{
+    height: 70px;
+    width: 70px;
+    border-radius: 30px;
+    background-color: rgba(0,0,0,0.5);
+    animation-name:test;
+    animation-duration: 4s;
+    animation-timing-function: ease;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-fill-mode: both;
+    position: absolute;
+    top: 30px;
+    left: 160px;
+    
+
+}
+
+@keyframes test{
+    0%{
+        background-color: rgba(0,0,0,0.5);
+        translate: 0 0;
+        rotate: 0;
+
+    }
+    25%{
+        background-color: var(--green-color);
+        translate: 0 600px;
+        rotate: 90deg;
+    }
+    50%{
+        background-color: rgba(0,0,0,0.5);
+        translate: 1100px 600px;
+        rotate: 180deg;
+    } 
+    75%{
+        background-color: var(--green-color);
+        translate: 1100px 0px;
+        rotate: 270deg;
+    }
+
+    100%{
+        background-color: rgba(0,0,0,0.5);
+        translate: 0 0;
+        rotate: 360deg;
+    }
+}
+.animation:hover{
+   animation-play-state: paused;
+   cursor: pointer;
+}
